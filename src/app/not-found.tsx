@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { ArrowLeft, SearchX } from "lucide-react";
 
-export default function NotFound(): JSX.Element {
+export default function NotFound()  {
   return (
     <main className="flex flex-1 items-center justify-center py-20">
       <Container>

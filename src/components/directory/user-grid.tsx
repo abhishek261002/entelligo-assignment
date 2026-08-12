@@ -5,7 +5,7 @@ interface UserGridProps {
   users: User[];
 }
 
-export function UserGrid({ users }: UserGridProps): JSX.Element {
+export function UserGrid({ users }: UserGridProps)  {
   return (
     <section aria-label="User directory grid">
       <ul

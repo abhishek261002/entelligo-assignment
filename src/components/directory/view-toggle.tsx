@@ -14,7 +14,7 @@ const OPTIONS: { mode: ViewMode; label: string; Icon: typeof LayoutGrid }[] = [
   { mode: "table", label: "Table view", Icon: List },
 ];
 
-export function ViewToggle({ value, onChange }: ViewToggleProps): JSX.Element {
+export function ViewToggle({ value, onChange }: ViewToggleProps)  {
   return (
     <div
       role="group"

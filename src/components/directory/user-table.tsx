@@ -13,7 +13,7 @@ interface UserTableProps {
   onSort: (config: SortConfig) => void;
 }
 
-function AvatarCell({ user }: { user: User }): JSX.Element {
+function AvatarCell({ user }: { user: User })  {
   const [err, setErr] = useState(false);
   const src = err || !user.avatar ? avatarFallback(user.fullName) : user.avatar;
   return (
@@ -31,7 +31,7 @@ function AvatarCell({ user }: { user: User }): JSX.Element {
   );
 }
 
-function SortIcon({ columnKey, config }: { columnKey: SortKey; config: SortConfig }): JSX.Element {
+function SortIcon({ columnKey, config }: { columnKey: SortKey; config: SortConfig })  {
   if (config.key !== columnKey) {
     return <ArrowUpDown size={13} className="text-slate-300 dark:text-slate-600" aria-hidden="true" />;
   }
@@ -46,7 +46,7 @@ const ROLE_PILL: Record<string, string> = {
   user: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
 };
 
-export function UserTable({ users, sortConfig, onSort }: UserTableProps): JSX.Element {
+export function UserTable({ users, sortConfig, onSort }: UserTableProps)  {
   const handleSort = (key: SortKey): void => {
     onSort({
       key,

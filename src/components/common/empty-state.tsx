@@ -7,7 +7,7 @@ interface EmptyStateProps {
   onClear?: () => void;
 }
 
-export function EmptyState({ query, onClear }: EmptyStateProps): JSX.Element {
+export function EmptyState({ query, onClear }: EmptyStateProps)  {
   return (
     <div
       role="status"

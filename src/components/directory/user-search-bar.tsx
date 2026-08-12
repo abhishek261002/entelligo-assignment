@@ -13,7 +13,7 @@ export function UserSearchBar({
   value,
   onChange,
   className,
-}: UserSearchBarProps): JSX.Element {
+}: UserSearchBarProps)  {
   return (
     <div className={cn("relative flex-1", className)}>
       <label htmlFor="user-search" className="sr-only">

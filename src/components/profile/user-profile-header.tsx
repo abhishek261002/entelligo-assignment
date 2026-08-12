@@ -16,7 +16,7 @@ const ROLE_COLORS: Record<string, string> = {
   user: "bg-emerald-100 text-emerald-700 border-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-300 dark:border-emerald-800",
 };
 
-export function UserProfileHeader({ user }: UserProfileHeaderProps): JSX.Element {
+export function UserProfileHeader({ user }: UserProfileHeaderProps)  {
   const [imgError, setImgError] = useState(false);
   const avatarSrc = imgError || !user.avatar ? avatarFallback(user.fullName) : user.avatar;
 

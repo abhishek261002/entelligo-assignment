@@ -9,7 +9,7 @@ interface ErrorPageProps {
   reset: () => void;
 }
 
-export default function GlobalError({ error, reset }: ErrorPageProps): JSX.Element {
+export default function GlobalError({ error, reset }: ErrorPageProps) {
   useEffect(() => {
     console.error("Unhandled app error:", error);
   }, [error]);

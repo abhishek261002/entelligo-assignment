@@ -19,7 +19,7 @@ export function UserInfoCard({
   icon,
   items,
   className,
-}: UserInfoCardProps): JSX.Element {
+}: UserInfoCardProps)  {
   const visibleItems = items.filter((item) => !item.hidden && item.value);
 
   if (visibleItems.length === 0) return <></>;

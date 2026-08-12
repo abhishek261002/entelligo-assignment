@@ -14,7 +14,7 @@ const SORT_OPTIONS: { key: SortKey; label: string }[] = [
   { key: "company", label: "Company A→Z" },
 ];
 
-export function UserSort({ value, onChange }: UserSortProps): JSX.Element {
+export function UserSort({ value, onChange }: UserSortProps)  {
   const currentLabel =
     SORT_OPTIONS.find((o) => o.key === value.key)?.label ?? "Sort";
 

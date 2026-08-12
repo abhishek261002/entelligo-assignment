@@ -1,7 +1,7 @@
 import { Container } from "@/components/layout/container";
 import { GridSkeleton } from "@/components/common/skeleton-loader";
 
-export default function RootLoading(): JSX.Element {
+export default function RootLoading() {
   return (
     <main className="flex-1 py-8">
       <Container>

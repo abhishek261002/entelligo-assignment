@@ -12,7 +12,7 @@ import { EmptyState } from "@/components/common/empty-state";
 import { useUserDirectory } from "@/hooks/use-user-directory";
 import { Users, ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function HomePage(): JSX.Element {
+export default function HomePage()  {
   const {
     paginatedUsers,
     totalCount,

@@ -7,7 +7,7 @@ interface ErrorStateProps {
   onRetry?: () => void;
 }
 
-export function ErrorState({ message, onRetry }: ErrorStateProps): JSX.Element {
+export function ErrorState({ message, onRetry }: ErrorStateProps)  {
   return (
     <div
       role="alert"

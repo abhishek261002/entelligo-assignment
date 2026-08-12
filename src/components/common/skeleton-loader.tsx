@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-function Skeleton({ className }: { className?: string }): JSX.Element {
+function Skeleton({ className }: { className?: string })  {
   return (
     <div
       aria-hidden="true"
@@ -10,7 +10,7 @@ function Skeleton({ className }: { className?: string }): JSX.Element {
 }
 
 /** Skeleton for a single grid card */
-export function CardSkeleton(): JSX.Element {
+export function CardSkeleton()  {
   return (
     <div
       aria-busy="true"
@@ -41,7 +41,7 @@ export function CardSkeleton(): JSX.Element {
 }
 
 /** Skeleton grid — `count` cards */
-export function GridSkeleton({ count = 12 }: { count?: number }): JSX.Element {
+export function GridSkeleton({ count = 12 }: { count?: number })  {
   return (
     <div
       role="status"
@@ -57,7 +57,7 @@ export function GridSkeleton({ count = 12 }: { count?: number }): JSX.Element {
 }
 
 /** Skeleton for a single table row */
-export function TableRowSkeleton(): JSX.Element {
+export function TableRowSkeleton()  {
   return (
     <tr aria-hidden="true">
       <td className="px-4 py-3">
@@ -89,7 +89,7 @@ export function TableRowSkeleton(): JSX.Element {
 }
 
 /** Full table skeleton */
-export function TableSkeleton({ rows = 10 }: { rows?: number }): JSX.Element {
+export function TableSkeleton({ rows = 10 }: { rows?: number })  {
   return (
     <div
       role="status"

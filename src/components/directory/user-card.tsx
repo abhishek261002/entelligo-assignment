@@ -22,7 +22,7 @@ function getRoleBadge(role: string): string {
   return ROLE_COLORS[role.toLowerCase()] ?? ROLE_COLORS.user;
 }
 
-export function UserCard({ user }: UserCardProps): JSX.Element {
+export function UserCard({ user }: UserCardProps)  {
   const [imgError, setImgError] = useState(false);
 
   const avatarSrc = imgError || !user.avatar ? avatarFallback(user.fullName) : user.avatar;
