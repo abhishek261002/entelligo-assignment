@@ -30,7 +30,7 @@ export function Navbar()  {
                 clipRule="evenodd"
               />
             </svg>
-            <span>GitHub</span>
+            
           </a>
         </div>
       </Container>
