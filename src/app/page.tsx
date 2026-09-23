@@ -35,7 +35,7 @@ export default function HomePage()  {
     <main className="flex-1 py-8">
       <Container>
         {/* ── Page header ── */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
             <Users size={14} aria-hidden="true" />
             <span>Directory</span>
@@ -46,7 +46,7 @@ export default function HomePage()  {
           <p className="mt-1.5 text-slate-500 dark:text-slate-400">
             Browse, search, and filter all users in the system.
           </p>
-        </div>
+        </div> */}
 
         {/* ── Control toolbar ── */}
         <div className="mb-6 flex flex-wrap items-center gap-3">
@@ -60,7 +60,7 @@ export default function HomePage()  {
         </div>
 
         {/* ── Stats bar ── */}
-        {!isLoading && !error && (
+        {/* {!isLoading && !error && (
           <div className="mb-5 flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
             <span>
               {totalCount === 0
@@ -73,10 +73,10 @@ export default function HomePage()  {
               </span>
             )}
           </div>
-        )}
+        )} */}
 
         {/* ── Content ── */}
-        {isLoading ? (
+        {/* {isLoading ? (
           viewMode === "grid" ? (
             <GridSkeleton count={12} />
           ) : (
@@ -94,7 +94,7 @@ export default function HomePage()  {
             sortConfig={sortConfig}
             onSort={setSortConfig}
           />
-        )}
+        )} */}
 
         {/* ── Pagination ── */}
         {!isLoading && !error && totalPages > 1 && (
